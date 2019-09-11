@@ -9492,7 +9492,6 @@ a:hover {
   #_posts_grid-181-14 .oxy-post-image-fixed-ratio {
     padding-bottom: 52%;
     background-size: cover;
-    image-path: ("businessman-carrying-a-load-of-cash-vector.jpg");
     background-position: center center
   }
   #_posts_grid-181-14 .oxy-post-title {
@@ -10116,7 +10115,7 @@ a:hover {
   #section-76-232 {
     text-align: center;
     background-color: #566d8f;
-    background-image: linear-gradient(rgba(86, 109, 143, 0.8), rgba(86, 109, 143, 0.8)), url(/assets/meeting.jpg);
+    background-image: linear-gradient(rgba(86, 109, 143, 0.8), rgba(86, 109, 143, 0.8)), image-url("meeting.jpg");
     background-size: cover;
     video-background-overlay: #ffffff
   }
@@ -12309,7 +12308,7 @@ a:hover {
       align-items: center
     }
     #section-2-18 {
-      background-image: linear-gradient(rgba(66, 64, 64, 0.69), rgba(66, 64, 64, 0.69)), url(/assets/19881.jpg);
+      background-image: linear-gradient(rgba(66, 64, 64, 0.69), rgba(66, 64, 64, 0.69)), image-url("19881.jpg");
       background-size: contain;
       background-repeat: no-repeat;
       text-align: center;
@@ -13515,7 +13514,7 @@ body, html {
 
 .bgimg {
   /* Background image */
-  background-image: url('/assets/under.jpg');
+  /*background-image: url('/assets/under.jpg');*/
   /* Full-screen */
   height: 100%;
   /* Center the background image */
