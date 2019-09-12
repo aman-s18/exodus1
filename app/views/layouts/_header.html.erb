@@ -1,56 +1,167 @@
-<body class="home page-template-default page page-id-14 oxygen-body" >
+<!DOCTYPE html>
+<html lang="en-US" >
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width">
+<!-- WP_HEAD() START -->
+
+		
+	<title>Exodus</title>
+
+	<script type="text/javascript">
+			jQuery(document).ready(function() {
+				jQuery('body').on('click', '.oxy-menu-toggle', function() {
+					jQuery(this).parent('.oxy-nav-menu').toggleClass('oxy-nav-menu-open');
+					jQuery('body').toggleClass('oxy-nav-menu-prevent-overflow');
+					jQuery('html').toggleClass('oxy-nav-menu-prevent-overflow');
+				});
+				var selector = '.oxy-nav-menu-open .menu-item a[href^="#"]';
+				jQuery('body').on('click', selector, function(){
+					jQuery('.oxy-nav-menu-open').removeClass('oxy-nav-menu-open');
+					jQuery('body').removeClass('oxy-nav-menu-prevent-overflow');
+					jQuery('html').removeClass('oxy-nav-menu-prevent-overflow');
+					jQuery(this).click();
+				});
+			});
+		</script>
+
+	<style type="text/css">
+
+	 body #gform_wrapper_1 ul li.gfield .ginput_container,
+	 body #gform_wrapper_1 ul li.gfield .gfield_description,
+	 body #gform_wrapper_1 div.ginput_complex label,
+	 body #gform_wrapper_1 input:not([type='radio']):not([type='checkbox']):not([type='submit']), 
+	 body #gform_wrapper_1 select, 
+	 body #gform_wrapper_1 textarea { 
+	  text-align:center;
+	 }
+	 
+	 body #gform_wrapper_1 ul.top_label li.gfield label.gfield_label {
+	  text-align: center;
+	  display: block;
+	 }
+	   
+	  body #gform_wrapper_1 .gform_footer,
+	  body #gform_wrapper_1 .gform_page_footer{
+	    text-align: center;
+			font-size: 25px;
+	  }
+	 
+	}
+
+
+	/* styling the radio button */
+
+	#gform_wrapper_1 .gfield_label {
+		color: #02528E;
+			font-size: 22px;
+	}
+
+	/* styling the video form */
+	#gform_wrapper_3 {
+		padding: 20px 10%;
+	}
+
+	/* keep it mobile friendly by only applying these styles for larger viewports */
+	@media only screen and (min-width: 641px) {
+	 
+	 body #gform_wrapper_3 { 
+	  max-width: 75%;
+	  margin: 0 auto;
+		font-size: 20px;
+	 }
+	 
+	 body #gform_wrapper_3 ul li.gfield .ginput_container,
+	 body #gform_wrapper_3 ul li.gfield .gfield_description,
+	 body #gform_wrapper_3 div.ginput_complex label,
+	 body #gform_wrapper_3 input:not([type='radio']):not([type='checkbox']):not([type='submit']), 
+	 body #gform_wrapper_3 select, 
+	 body #gform_wrapper_3 textarea { 
+	  text-align:center;
+	 }
+	 
+	 body #gform_wrapper_3 ul.top_label li.gfield label.gfield_label {
+	  text-align: center;
+	  display: block;
+	 }
+	   
+	  body #gform_wrapper_3 .gform_footer,
+	  body #gform_wrapper_3 .gform_page_footer{
+	    text-align: center;
+			font-size: 25px;
+	  }
+	 
+	}
+
+
+	/* styling the radio button */
+
+	#gform_wrapper_3 .gfield_label {
+		color: #02528E;
+			font-size: 22px;
+	}
+	/* Forcing Cap FIN */
+	body .gform_wrapper input#input_1_12 {
+	    text-transform: uppercase;
+	}
+
+
+	.gform_body input {
+	    font-size: 48px;
+	}
+		</style>
+		<!-- END OF WP_HEAD() -->
+ </head>
+  <body class="home page-template-default page page-id-14 oxygen-body" >
 	<div id="_header-2-225" class="oxy-header-wrapper oxy-header">
 		<div id="_header_row-3-225" class="oxy-header-row">
 			<div class="oxy-header-container">
 				<div id="_header_left-4-225" class="oxy-header-left">
-					<div id="_social_icons-5-225" class="oxy-social-icons">
-						
-					</div>
+					<div id="_social_icons-5-225" class="oxy-social-icons"></div>
 				</div>
-				<div id="_header_center-6-225" class="oxy-header-center">
-					
-				</div>
-				<div id="_header_right-7-225" class="oxy-header-right">
-					
-				</div>
+				<div id="_header_center-6-225" class="oxy-header-center"></div>
+				<div id="_header_right-7-225" class="oxy-header-right"></div>
 			</div>
 		</div>
 		<div id="_header_row-10-225" class="oxy-header-row">
 			<div class="oxy-header-container">
-				<div id="_header_left-11-225" class="oxy-header-left">
-				<!-- <nav class="navbar navbar-dark bg-primary"> -->
-					
-    
-					
-					
-						<%= image_tag("logo1111.png", {:style => "width:200px;"}) %>
-					
-					
+				<div id="_header_left-11-225" class="oxy-header-left">					
+					<%= link_to(image_tag("logo1111.png", {:style => "width:200px;"}), home_about_path) %>
 					<div id="_nav_menu-17-225" class="oxy-nav-menu oxy-nav-menu-dropdowns oxy-nav-menu-dropdown-arrow">
-						
-						<div class="menu-main-menu-container">
-		
+							<div class="oxy-menu-toggle">
+								<div class="oxy-nav-menu-hamburger-wrap">
+									<div class="oxy-nav-menu-hamburger">
+										<div class="oxy-nav-menu-hamburger-line"></div>
+										<div class="oxy-nav-menu-hamburger-line"></div>
+										<div class="oxy-nav-menu-hamburger-line"></div>
+									</div>
+								</div>
+							</div>					 	
+						<div class="menu-main-menu-container">		
 							<ul id="menu-main-menu" class="oxy-nav-menu-list">
 								<li id="menu-item-64562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38">
-												<a href="/">Home</a>
-											</li>
-											<li id="menu-item-64562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38">
-												<a href="/home/helper">Helpers</a>
-												<ul class="sub-menu">
-														<li id="menu-item-67808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67808"><a href="/home/under">All helpers</a></li>
-                            <li id="menu-item-67808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67808"><a href="/home/release">Release Your Helper</a></li>
-													</ul>
-											</li>
-													
-					
+									<a href="/">Home</a>
+								</li>
+								<li id="menu-item-64562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38">
+									<a href="/home/helper">Helpers</a>
+									<ul class="sub-menu">
+										<li id="menu-item-67808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67808">
+											<a href="/home/under">All helpers</a>
+										</li><li id="menu-item-67808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67808">
+											<a href="/home/release">Release Your Helper</a>
+										</li>
+									</ul>
+								</li>
 								<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38">
 									<a href="/home/corporate">CORPORATE PLACEMENT</a>
 								</li>
 								<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38">
 									<a href="/home/under">CARRER EXPLORER</a>
-                  <ul class="sub-menu">
-                            <li id="menu-item-67808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67808"><a href="/home/under">CARRER ADVICE</a></li>
-                  </ul>
+									<ul class="sub-menu">
+										<li id="menu-item-67808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67808">
+											<a href="/home/under">CARRER ADVICE</a>
+										</li>
+									</ul>
 								</li>
 								<li id="menu-item-57520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57520">
 									<a href="/home/ourservices">Our Services</a>
@@ -60,27 +171,13 @@
 								</li>
 								<li id="menu-item-68456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68456">
 									<a href="/home/contactus">Contact</a>
-								</li>
-								<!-- <li id="menu-item-57517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57517">
-									<a href=#>Login</a>
-								</li> -->
-								
+								</li>							
      						</ul>
-     	<!-- </nav> -->
-
-		</div>
-	</div>
-	</div>
-	<div id="_header_center-14-225" class="oxy-header-center">
-		
-
-	</div>
-	<div id="_header_right-15-225" class="oxy-header-right">
-		
-	</div>
-	 </div>
-	</div>
-	</div>
-	
-</body>
-		
+     					</div>
+     				</div>
+     			</div>
+     		</div>
+     	</div>
+    </div>
+  </body>
+</html>
